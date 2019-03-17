@@ -1,0 +1,63 @@
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait-down {
+  @media (max-width: 899px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin scrollbar {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #eaeaea;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #dedede;
+  }
+}
+
+$header: "Montserrat";
+$body: "Source Sans Pro";
+
+$orange: #f2731f;
+$light-blue: #0d21a1;
+$dark-blue: #011638;
+$white: #fff;
+$light-grey: #cfcfcf;
+$dark-grey: #626262;
+$black: #141414;
+$slightly-darker-black: #000000;
+
+$spacing-standard: 8px;
+$spacing-double: $spacing-standard * 2;
+$spacing-triple: $spacing-standard * 3;
+
+$spacing-md: $spacing-double;
+$spacing-lg: $spacing-double * 2;
+$spacing-xl: $spacing-triple * 2;

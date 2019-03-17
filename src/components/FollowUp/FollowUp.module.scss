@@ -1,0 +1,58 @@
+@import "../../styles/variables.module";
+
+.root {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.headline {
+  font-family: $header;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: $dark-blue;
+  margin: $spacing-lg;
+}
+
+.followUpText {
+  font-family: $body;
+  font-size: 1.3rem;
+  font-weight: normal;
+  color: $dark-grey;
+  margin: $spacing-md;
+  @include for-tablet-portrait-down {
+    font-size: 1.3rem;
+  }
+}
+
+.buttonsWrapper {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: $spacing-md;
+  button {
+    font-family: Montserrat;
+    font-weight: 700;
+    background-color: $white;
+    color: $orange;
+    margin: $spacing-lg;
+    padding: $spacing-md;
+    cursor: pointer;
+    border: 2px solid $orange;
+    border-radius: 4px;
+    outline: none !important;
+  }
+  @include for-tablet-portrait-down {
+    width: 100%;
+  }
+  @include for-phone-only {
+    width: 100%;
+    flex-direction: column;
+  }
+}
