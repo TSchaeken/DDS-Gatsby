@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import styles from "../styles/main.module.scss"
-import Main from "../Components/Main/Main"
-import NavBar from "../components/NavBar/NavBar"
+import Main from "../Components/Main/Main.js"
+import NavBar from "../components/NavBar/NavBar.js"
 
 class IndexPage extends Component {
   state = {
