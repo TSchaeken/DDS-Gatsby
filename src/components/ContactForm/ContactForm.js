@@ -6,7 +6,6 @@ import styles from "./ContactForm.module.scss"
 const SuccessText = ({ toggleForm }) => (
   <div className={styles.successText}>
     <h4>Nice, we've got your info now!</h4>
-    <h4>Noah's gonna put some content here eventually I'm sure!</h4>
     {/* eslint-disable-next-line */}
     <h4 onClick={toggleForm} className={styles.toggleFormLink}>
       Show me the form again
@@ -32,7 +31,7 @@ class ContactForm extends Component {
 
   sendEmail = () => {
     const response = fetch(
-      "https://zb8113dwnd.execute-api.us-west-2.amazonaws.com/dev/email/send",
+      "https://ukup5otmfb.execute-api.us-west-2.amazonaws.com/production/email/send",
       {
         headers: new Headers({
           "Content-Type": "application/json",
