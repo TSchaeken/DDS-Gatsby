@@ -27,12 +27,19 @@ class HomePage extends Component {
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600"
         rel="stylesheet"
       />
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+      />
+      <script>{`(adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-8031739923151509",
+            enable_page_level_ads: true
+          });`}</script>
     </Helmet>
   )
 
   render() {
     const { setRef, scrollToRef, scrollY } = this.props
-    console.log("scrollY here: ", scrollY)
     return (
       <div className={styles.root}>
         {this.head()}
