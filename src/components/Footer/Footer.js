@@ -14,7 +14,7 @@ const Branding = () => (
     <br />
     <h5>Location</h5>
     <p>Denver, CO USA</p>
-    <p>Phone 720.588.3355</p>
+    <p>Phone 602.301.6624</p>
     <br />
     <img src={bitcoinAccepted} alt="bitcoinAccepted" />
   </div>
