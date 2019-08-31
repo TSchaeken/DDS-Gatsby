@@ -12,7 +12,7 @@ class HomePage extends Component {
   head = () => (
     <Helmet>
       <meta charSet="utf-8" />
-      <title>Denver Dev Shop</title>
+      <title>Denver Devshop</title>
       <meta property="og:title" content="Custom Software Development" />
       <meta property="og:description" content="Custom Software Development" />
       <meta property="og:image" content="" />
